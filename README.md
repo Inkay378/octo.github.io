@@ -118,9 +118,6 @@
         <p>If you'd like to get in touch, feel free to reach out to my email. <strong>garciainaky616@gmail.com</strong> email me if u need help with anything
         
 <section>
-  <h2>Porn</h2>
-  <video width="640" height="360" controls>
-    <source src="https://www.pornhub.com/view_video.php?viewkey=67fe2739afdff" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <h2>Featured Video</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/MCy7yx3fSTY" frameborder="0" allowfullscreen></iframe>
 </section>
