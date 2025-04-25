@@ -3,6 +3,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Inaky Hub</title>
+  <link rel="icon" href="https://guns.lol/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -12,17 +13,26 @@
       color: #dbeafe;
       text-align: center;
     }
+
     header {
       padding: 30px 20px;
     }
+
     header h1 {
       font-size: 3em;
       color: #a78bfa;
       text-shadow: 0 0 12px #a78bfa;
     }
+
     nav {
-      margin: 30px 0;
+      background: #0e1a2b;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
+
     nav a {
       background: transparent;
       border: 2px solid #a78bfa;
@@ -35,15 +45,19 @@
       transition: all 0.3s ease;
       box-shadow: 0 0 10px #a78bfa;
     }
+
     nav a:hover {
       background-color: #a78bfa;
       color: #0f172a;
     }
+
     .section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
+      animation: fadeInUp 1s ease-out;
     }
+
     .script-box {
       text-align: left;
       background: #1e293b;
@@ -55,11 +69,29 @@
       word-wrap: break-word;
       box-shadow: 0 0 15px #a78bfa;
     }
+
     .video {
       margin-top: 20px;
       box-shadow: 0 0 25px #a78bfa;
       border-radius: 12px;
     }
+
+    .btn-discord {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #5865F2;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn-discord:hover {
+      background-color: #4752C4;
+    }
+
     footer {
       margin-top: 50px;
       padding: 20px;
@@ -67,9 +99,21 @@
       color: #64748b;
       font-size: 0.9em;
     }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Inaky Hub</h1>
     <p>Scripts, Tools, and Good Vibes Only</p>
@@ -79,6 +123,7 @@
     <a href="#scripts">Scripts</a>
     <a href="#video">Video</a>
     <a href="#contact">Contact</a>
+  <a href="https://discord.gg/EyseXZMm" target="_blank" class="btn-discord">Join Discord</a>
   </nav>
 
   <section class="section" id="scripts">
@@ -136,5 +181,6 @@
   <footer>
     Made by Inaky's chat gpt prompts
   </footer>
+
 </body>
 </html>
