@@ -20,7 +20,6 @@
       text-shadow: 0 0 10px #a78bfa;
     }
 
-    /* Navigation */
     nav {
       background: #1a1a1a;
       padding: 1rem 0;
@@ -43,9 +42,11 @@
       font-weight: bold;
       border-radius: 8px;
       transition: all 0.3s ease;
+      cursor: pointer;
     }
 
-    .nav-center a:hover {
+    .nav-center a:hover,
+    .nav-center a.active {
       color: #a78bfa;
       background-color: rgba(167, 139, 250, 0.1);
     }
@@ -54,7 +55,12 @@
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
-      animation: fadeInUp 1s ease-out;
+      animation: fadeInUp 0.6s ease;
+      display: none;
+    }
+
+    .section.active {
+      display: block;
     }
 
     .script-box {
@@ -67,6 +73,51 @@
       white-space: pre-wrap;
       word-wrap: break-word;
       box-shadow: 0 0 15px #a78bfa;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .feature-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      color: #e0e0e0;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+
+    .feature-card:hover {
+      border: 1px solid white;
+      background: #1f1f1f;
+      box-shadow: 0 0 15px white;
+    }
+
+    .feature-card i {
+      display: inline-block;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #a78bfa;
+    }
+
+    .feature-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #cbd5e1;
     }
 
     .video {
@@ -116,60 +167,29 @@
 </head>
 <body>
 
-  <header class="section">
+  <header class="section active">
     <h1>Inaky Hub</h1>
     <p>Scripts, Tools, and Good Vibes Only</p>
   </header>
 
   <nav>
     <div class="nav-center">
-      <a href="#scripts">Scripts</a>
-      <a href="#video">Video</a>
-      <a href="#discord">Discord</a>
-      <a href="#contact">Contact</a>
+      <a class="tab-link active" data-tab="scripts">Scripts</a>
+      <a class="tab-link" data-tab="video">Video</a>
+      <a class="tab-link" data-tab="discord">Discord</a>
+      <a class="tab-link" data-tab="contact">Contact</a>
     </div>
   </nav>
 
-  <section class="section" id="scripts">
+  <section class="section active" id="scripts">
     <h2>🔥 Game Scripts</h2>
-
-    <div class="script-box">
-      <strong>TSB Launcher:</strong><br>
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/10tempest01/tempest-hub/refs/heads/main/Launcher.lua"))()
-    </div>
-
-    <div class="script-box">
-      <strong>MADARA Moveset:</strong><br>
-      getgenv().Cutscene = True<br>
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/LolnotaKid/SCRIPTSBYVEUX/refs/heads/main/BoombasticLol.lua.txt"))()
-    </div>
-
-    <div class="script-box">
-      <strong>Minos Prime Fix:</strong><br>
-      _G.SkipIntro = true<br>
-      _G.Night = false<br>
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/S1gmaGuy/MinosPrimeFixed/refs/heads/main/ThefixIsSoSigma"))()
-    </div>
-
-    <div class="script-box">
-      <strong>Very OP Hub:</strong><br>
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/Phantasm/refs/heads/main/Games/TSB.lua"))()
-    </div>
-
-    <div class="script-box">
-      <strong>Tamhub:</strong><br>
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/tamarixr/tamhub/main/bettertamhub.lua"))()
-    </div>
-
-    <div class="script-box">
-      <strong>Infinite Yield:</strong><br>
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-    </div>
-
-    <div class="script-box">
-      <strong>UNC Test:</strong><br>
-      loadstring(game:HttpGet('https://github.com/ltseverydayyou/uuuuuuu/blob/main/UNC%20test?raw=true'))()
-    </div>
+    <div class="script-box"><strong>TSB Launcher:</strong><br>loadstring(game:HttpGet("https://raw.githubusercontent.com/10tempest01/tempest-hub/refs/heads/main/Launcher.lua"))()</div>
+    <div class="script-box"><strong>MADARA Moveset:</strong><br>getgenv().Cutscene = True<br>loadstring(game:HttpGet("https://raw.githubusercontent.com/LolnotaKid/SCRIPTSBYVEUX/refs/heads/main/BoombasticLol.lua.txt"))()</div>
+    <div class="script-box"><strong>Minos Prime Fix:</strong><br>_G.SkipIntro = true<br>_G.Night = false<br>loadstring(game:HttpGet("https://raw.githubusercontent.com/S1gmaGuy/MinosPrimeFixed/refs/heads/main/ThefixIsSoSigma"))()</div>
+    <div class="script-box"><strong>Very OP Hub:</strong><br>loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/Phantasm/refs/heads/main/Games/TSB.lua"))()</div>
+    <div class="script-box"><strong>Tamhub:</strong><br>loadstring(game:HttpGet("https://raw.githubusercontent.com/tamarixr/tamhub/main/bettertamhub.lua"))()</div>
+    <div class="script-box"><strong>Infinite Yield:</strong><br>loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()</div>
+    <div class="script-box"><strong>UNC Test:</strong><br>loadstring(game:HttpGet('https://github.com/ltseverydayyou/uuuuuuu/blob/main/UNC%20test?raw=true'))()</div>
   </section>
 
   <section class="section" id="video">
@@ -177,8 +197,7 @@
     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/MCy7yx3fSTY" frameborder="0" allowfullscreen></iframe>
   </section>
 
-  <!-- Join Discord Section -->
-  <section id="discord" class="section">
+  <section class="section" id="discord">
     <h2>💬 Join My Discord</h2>
     <p>Come hang out, get updates, share scripts, or just vibe with the squad.</p>
     <a href="https://discord.gg/EyseXZMm" target="_blank" class="btn-discord">Join the Discord</a>
@@ -192,6 +211,23 @@
   <footer>
     Made by Inaky's chat gpt prompts
   </footer>
+
+  <script>
+    const tabLinks = document.querySelectorAll(".tab-link");
+    const sections = document.querySelectorAll(".section");
+
+    tabLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        // Remove active from all
+        tabLinks.forEach(l => l.classList.remove("active"));
+        sections.forEach(s => s.classList.remove("active"));
+
+        // Add active to clicked
+        link.classList.add("active");
+        document.getElementById(link.getAttribute("data-tab")).classList.add("active");
+      });
+    });
+  </script>
 
 </body>
 </html>
