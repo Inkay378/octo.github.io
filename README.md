@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -117,11 +116,8 @@
     <section>
       <h2>Contact</h2>
         <p>If you'd like to get in touch, feel free to reach out to my email. <strong>garciainaky616@gmail.com</strong> email me if u need help with anything
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Inaky garcia
-  </footer>
-</body>
-</html>
+        
+<section>
+  <h2>Watch some porn rq</h2>
+  <iframe width="560" height="315" src="(https://www.pornhub.com/view_video.php?viewkey=67fe2739afdff)" frameborder="0" allowfullscreen></iframe>
+</section>
