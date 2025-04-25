@@ -116,7 +116,7 @@
 
     <section>
       <h2>Contact</h2>
-      <p>If you'd like to get in touch, feel free to <a href="garciainaky616@gmail.com">email me if u need help with anything</a>.</p>
+        <p>If you'd like to get in touch, feel free to reach out to my email. <strong>garciainaky616@gmail.com</strong> email me if u need help with anything
     </section>
   </main>
 
