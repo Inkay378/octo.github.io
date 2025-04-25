@@ -1,233 +1,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Welcome to Inaky's Website</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inaky Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #eee;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at center, #0f172a, #060d1f);
+      color: #dbeafe;
+      text-align: center;
     }
     header {
-      background: #1e1e2f;
-      padding: 40px 20px;
-      text-align: center;
-      color: #d9a7ff;
-      border-bottom: 4px solid #d9a7ff;
+      padding: 30px 20px;
     }
     header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3rem;
-      margin-bottom: 10px;
+      font-size: 3em;
+      color: #a78bfa;
+      text-shadow: 0 0 12px #a78bfa;
     }
-    main {
-      padding: 30px;
-      max-width: 1100px;
+    nav {
+      margin: 30px 0;
+    }
+    nav a {
+      background: transparent;
+      border: 2px solid #a78bfa;
+      padding: 10px 20px;
+      margin: 0 10px;
+      color: #dbeafe;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #a78bfa;
+    }
+    nav a:hover {
+      background-color: #a78bfa;
+      color: #0f172a;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
     }
-    section {
-      background: #1e1e2f;
-      padding: 25px;
-      margin-bottom: 30px;
-      border-left: 6px solid #d9a7ff;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    }
-    h2 {
-      font-family: 'Orbitron', sans-serif;
-      color: #d9a7ff;
-      margin-bottom: 15px;
-    }
-    a {
-      color: #d9a7ff;
-      text-decoration: none;
-    }
-    .scripts-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 15px;
-    }
-    .script-block {
-      background-color: #2c2c2c;
-      padding: 15px;
-      border-left: 4px solid #d9a7ff;
-      border-radius: 5px;
-      font-family: 'Courier New', Courier, monospace;
-      color: #f1f1f1;
+    .script-box {
+      text-align: left;
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      color: #f1f5f9;
       white-space: pre-wrap;
       word-wrap: break-word;
+      box-shadow: 0 0 15px #a78bfa;
     }
-    iframe {
-      width: 100%;
-      height: 315px;
-      border: none;
-      border-radius: 8px;
-    }
-    canvas {
-      background-color: #111;
-      display: block;
-      margin: 0 auto;
-      border: 2px solid #d9a7ff;
+    .video {
+      margin-top: 20px;
+      box-shadow: 0 0 25px #a78bfa;
+      border-radius: 12px;
     }
     footer {
-      background-color: #111;
-      color: #aaa;
-      text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      margin-top: 50px;
+      padding: 20px;
+      background: #0e1a2b;
+      color: #64748b;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Inaky's Website</h1>
-    <p>Building something amazing with code</p>
+    <h1>Inaky Hub</h1>
+    <p>Scripts, Tools, and Good Vibes Only</p>
   </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Hi! I'm Inaky, and here are some scripts for u bum.</p>
-    </section>
 
-    <section>
-      <h2>Game Scripts</h2>
-      <div class="scripts-container">
-        <div class="script-block">
-          <strong>Tsb:</strong>
-          loadstring(game:HttpGet("https://raw.githubusercontent.com/10tempest01/tempest-hub/refs/heads/main/Launcher.lua"))()
-        </div>
-        <div class="script-block">
-          <strong>MADARA Moveset:</strong>
-          getgenv().Cutscene = True
-          loadstring(game:HttpGet("https://raw.githubusercontent.com/LolnotaKid/SCRIPTSBYVEUX/refs/heads/main/BoombasticLol.lua.txt"))()
-        </div>
-        <div class="script-block">
-          <strong>Minos Prime:</strong>
-          _G.SkipIntro = true
-          _G.Night = false
-          loadstring(game:HttpGet("https://raw.githubusercontent.com/S1gmaGuy/MinosPrimeFixed/refs/heads/main/ThefixIsSoSigma"))()
-        </div>
-        <div class="script-block">
-          <strong>Very OP Hub:</strong>
-          loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/Phantasm/refs/heads/main/Games/TSB.lua"))()
-        </div>
-        <div class="script-block">
-          <strong>Infinite Yield:</strong>
-          loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-        </div>
-        <div class="script-block">
-          <strong>Unc Test:</strong>
-          loadstring(game:HttpGet('https://github.com/ltseverydayyou/uuuuuuu/blob/main/UNC%20test?raw=true'))()
-        </div>
-      </div>
-    </section>
+  <nav>
+    <a href="#scripts">Scripts</a>
+    <a href="#video">Video</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section>
-      <h2>Featured Video</h2>
-      <iframe src="https://www.youtube.com/embed/MCy7yx3fSTY" allowfullscreen></iframe>
-    </section>
+  <section class="section" id="scripts">
+    <h2>🔥 Game Scripts</h2>
 
-    <section>
-      <h2>Snake Game</h2>
-      <canvas id="game" width="400" height="400"></canvas>
-      <script>
-        const canvas = document.getElementById("game");
-        const ctx = canvas.getContext("2d");
+    <div class="script-box">
+      <strong>TSB Launcher:</strong><br>
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/10tempest01/tempest-hub/refs/heads/main/Launcher.lua"))()
+    </div>
 
-        const grid = 20;
-        let count = 0;
-        let snake = { x: 160, y: 160, dx: grid, dy: 0, cells: [], maxCells: 4 };
-        let apple = { x: 320, y: 320 };
+    <div class="script-box">
+      <strong>MADARA Moveset:</strong><br>
+      getgenv().Cutscene = True<br>
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/LolnotaKid/SCRIPTSBYVEUX/refs/heads/main/BoombasticLol.lua.txt"))()
+    </div>
 
-        function getRandomInt(min, max) {
-          return Math.floor(Math.random() * (max - min)) + min;
-        }
+    <div class="script-box">
+      <strong>Minos Prime Fix:</strong><br>
+      _G.SkipIntro = true<br>
+      _G.Night = false<br>
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/S1gmaGuy/MinosPrimeFixed/refs/heads/main/ThefixIsSoSigma"))()
+    </div>
 
-        function loop() {
-          requestAnimationFrame(loop);
+    <div class="script-box">
+      <strong>Very OP Hub:</strong><br>
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/Phantasm/refs/heads/main/Games/TSB.lua"))()
+    </div>
 
-          if (++count < 4) return;
-          count = 0;
+    <div class="script-box">
+      <strong>Tamhub:</strong><br>
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/tamarixr/tamhub/main/bettertamhub.lua"))()
+    </div>
 
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
+    <div class="script-box">
+      <strong>Infinite Yield:</strong><br>
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    </div>
 
-          snake.x += snake.dx;
-          snake.y += snake.dy;
+    <div class="script-box">
+      <strong>UNC Test:</strong><br>
+      loadstring(game:HttpGet('https://github.com/ltseverydayyou/uuuuuuu/blob/main/UNC%20test?raw=true'))()
+    </div>
+  </section>
 
-          if (snake.x < 0) snake.x = canvas.width - grid;
-          else if (snake.x >= canvas.width) snake.x = 0;
-          if (snake.y < 0) snake.y = canvas.height - grid;
-          else if (snake.y >= canvas.height) snake.y = 0;
+  <section class="section" id="video">
+    <h2>🎥 KJ & Friends</h2>
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/MCy7yx3fSTY" frameborder="0" allowfullscreen></iframe>
+  </section>
 
-          snake.cells.unshift({ x: snake.x, y: snake.y });
-          if (snake.cells.length > snake.maxCells) snake.cells.pop();
+  <section class="section" id="contact">
+    <h2>📫 Contact</h2>
+    <p>Hit me up at <strong>garciainaky616@gmail.com</strong> if you need help or got cool scripts 😎</p>
+  </section>
 
-          ctx.fillStyle = "#d9a7ff";
-          ctx.fillRect(apple.x, apple.y, grid - 1, grid - 1);
-
-          ctx.fillStyle = "#fff";
-          snake.cells.forEach((cell, index) => {
-            ctx.fillRect(cell.x, cell.y, grid - 1, grid - 1);
-
-            if (cell.x === apple.x && cell.y === apple.y) {
-              snake.maxCells++;
-              apple.x = getRandomInt(0, 20) * grid;
-              apple.y = getRandomInt(0, 20) * grid;
-            }
-
-            for (let i = index + 1; i < snake.cells.length; i++) {
-              if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
-                snake.x = 160;
-                snake.y = 160;
-                snake.cells = [];
-                snake.maxCells = 4;
-                snake.dx = grid;
-                snake.dy = 0;
-                apple.x = getRandomInt(0, 20) * grid;
-                apple.y = getRandomInt(0, 20) * grid;
-              }
-            }
-          });
-        }
-
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "ArrowLeft" && snake.dx === 0) {
-            snake.dx = -grid;
-            snake.dy = 0;
-          } else if (e.key === "ArrowUp" && snake.dy === 0) {
-            snake.dy = -grid;
-            snake.dx = 0;
-          } else if (e.key === "ArrowRight" && snake.dx === 0) {
-            snake.dx = grid;
-            snake.dy = 0;
-          } else if (e.key === "ArrowDown" && snake.dy === 0) {
-            snake.dy = grid;
-            snake.dx = 0;
-          }
-        });
-
-        requestAnimationFrame(loop);
-      </script>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>If you'd like to get in touch, feel free to reach out to my email: <strong>garciainaky616@gmail.com</strong></p>
-    </section>
-  </main>
   <footer>
-    &copy; 2025 Inaky. All rights reserved.
+    Made by Inaky's chat gpt prompts
   </footer>
 </body>
 </html>
