@@ -72,6 +72,12 @@
       border: none;
       border-radius: 8px;
     }
+    canvas {
+      background-color: #111;
+      display: block;
+      margin: 0 auto;
+      border: 2px solid #d9a7ff;
+    }
     footer {
       background-color: #111;
       color: #aaa;
@@ -101,30 +107,25 @@
           <strong>Tsb:</strong>
           loadstring(game:HttpGet("https://raw.githubusercontent.com/10tempest01/tempest-hub/refs/heads/main/Launcher.lua"))()
         </div>
-
         <div class="script-block">
           <strong>MADARA Moveset:</strong>
           getgenv().Cutscene = True
           loadstring(game:HttpGet("https://raw.githubusercontent.com/LolnotaKid/SCRIPTSBYVEUX/refs/heads/main/BoombasticLol.lua.txt"))()
         </div>
-
         <div class="script-block">
           <strong>Minos Prime:</strong>
           _G.SkipIntro = true
           _G.Night = false
           loadstring(game:HttpGet("https://raw.githubusercontent.com/S1gmaGuy/MinosPrimeFixed/refs/heads/main/ThefixIsSoSigma"))()
         </div>
-
         <div class="script-block">
           <strong>Very OP Hub:</strong>
           loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/Phantasm/refs/heads/main/Games/TSB.lua"))()
         </div>
-
         <div class="script-block">
           <strong>Infinite Yield:</strong>
           loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
         </div>
-
         <div class="script-block">
           <strong>Unc Test:</strong>
           loadstring(game:HttpGet('https://github.com/ltseverydayyou/uuuuuuu/blob/main/UNC%20test?raw=true'))()
@@ -138,12 +139,95 @@
     </section>
 
     <section>
+      <h2>Snake Game</h2>
+      <canvas id="game" width="400" height="400"></canvas>
+      <script>
+        const canvas = document.getElementById("game");
+        const ctx = canvas.getContext("2d");
+
+        const grid = 20;
+        let count = 0;
+        let snake = { x: 160, y: 160, dx: grid, dy: 0, cells: [], maxCells: 4 };
+        let apple = { x: 320, y: 320 };
+
+        function getRandomInt(min, max) {
+          return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+        function loop() {
+          requestAnimationFrame(loop);
+
+          if (++count < 4) return;
+          count = 0;
+
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+          snake.x += snake.dx;
+          snake.y += snake.dy;
+
+          if (snake.x < 0) snake.x = canvas.width - grid;
+          else if (snake.x >= canvas.width) snake.x = 0;
+          if (snake.y < 0) snake.y = canvas.height - grid;
+          else if (snake.y >= canvas.height) snake.y = 0;
+
+          snake.cells.unshift({ x: snake.x, y: snake.y });
+          if (snake.cells.length > snake.maxCells) snake.cells.pop();
+
+          ctx.fillStyle = "#d9a7ff";
+          ctx.fillRect(apple.x, apple.y, grid - 1, grid - 1);
+
+          ctx.fillStyle = "#fff";
+          snake.cells.forEach((cell, index) => {
+            ctx.fillRect(cell.x, cell.y, grid - 1, grid - 1);
+
+            if (cell.x === apple.x && cell.y === apple.y) {
+              snake.maxCells++;
+              apple.x = getRandomInt(0, 20) * grid;
+              apple.y = getRandomInt(0, 20) * grid;
+            }
+
+            for (let i = index + 1; i < snake.cells.length; i++) {
+              if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+                snake.x = 160;
+                snake.y = 160;
+                snake.cells = [];
+                snake.maxCells = 4;
+                snake.dx = grid;
+                snake.dy = 0;
+                apple.x = getRandomInt(0, 20) * grid;
+                apple.y = getRandomInt(0, 20) * grid;
+              }
+            }
+          });
+        }
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowLeft" && snake.dx === 0) {
+            snake.dx = -grid;
+            snake.dy = 0;
+          } else if (e.key === "ArrowUp" && snake.dy === 0) {
+            snake.dy = -grid;
+            snake.dx = 0;
+          } else if (e.key === "ArrowRight" && snake.dx === 0) {
+            snake.dx = grid;
+            snake.dy = 0;
+          } else if (e.key === "ArrowDown" && snake.dy === 0) {
+            snake.dy = grid;
+            snake.dx = 0;
+          }
+        });
+
+        requestAnimationFrame(loop);
+      </script>
+    </section>
+
+    <section>
       <h2>Contact</h2>
       <p>If you'd like to get in touch, feel free to reach out to my email: <strong>garciainaky616@gmail.com</strong></p>
     </section>
   </main>
   <footer>
-    &copy; #2025 Inaky. All rights reserved.
+    &copy; 2025 Inaky. All rights reserved.
   </footer>
 </body>
 </html>
