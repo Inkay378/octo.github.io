@@ -193,8 +193,12 @@
   </section>
 
   <section class="section" id="video">
-    <h2>🎥 KJ & Friends</h2>
-    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/MCy7yx3fSTY" frameborder="0" allowfullscreen></iframe>
+    <h2>🎥watch if ur bored</h2>
+  <div class="video-grid">
+  <iframe class="video" src="https://www.youtube.com/embed/MCy7yx3fSTY" frameborder="0" allowfullscreen></iframe>
+  <iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+  <iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+</div>
   </section>
 
   <section class="section" id="discord">
