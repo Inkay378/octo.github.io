@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -129,7 +130,7 @@
       height: 315px;
     }
 
-    .btn-discord {
+    .btn-primary {
       display: inline-block;
       margin-top: 20px;
       background-color: #a78bfa;
@@ -143,7 +144,7 @@
       transition: background 0.3s, transform 0.3s;
     }
 
-    .btn-discord:hover {
+    .btn-primary:hover {
       background-color: #c4b5fd;
       transform: scale(1.05);
     }
@@ -204,10 +205,16 @@
     <iframe class="video" src="https://www.youtube.com/embed/YZdl-uMfE0Y" frameborder="0" allowfullscreen></iframe>
   </section>
 
+  <section class="section" id="scriptblox">
+    <h2>📦 ScriptBlox</h2>
+    <p>Discover tons of scripts directly from the official site.</p>
+    <a href="https://scriptblox.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">Visit ScriptBlox</a>
+  </section>
+
   <section class="section" id="discord">
     <h2>💬 Join My Discord</h2>
     <p>Come hang out, get updates, share scripts, or just vibe with the squad.</p>
-    <a href="https://discord.gg/EyseXZMm" target="_blank" class="btn-discord">Join the Discord</a>
+    <a href="https://discord.gg/EyseXZMm" target="_blank" rel="noopener noreferrer" class="btn-primary">Join the Discord</a>
   </section>
 
   <section class="section" id="contact">
