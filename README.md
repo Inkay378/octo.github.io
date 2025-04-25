@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,46 +10,45 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at center, #0f172a, #060d1f);
-      color: #dbeafe;
+      background: #121212;
+      color: #e0e0e0;
+      overflow-x: hidden;
       text-align: center;
     }
 
-    header {
-      padding: 30px 20px;
-    }
-
-    header h1 {
-      font-size: 3em;
+    h1, h2 {
       color: #a78bfa;
-      text-shadow: 0 0 12px #a78bfa;
+      text-shadow: 0 0 10px #a78bfa;
     }
 
+    /* Navigation */
     nav {
-      background: #0e1a2b;
-      padding: 15px 0;
+      background: #1a1a1a;
+      padding: 1rem 0;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
-    nav a {
-      background: transparent;
-      border: 2px solid #a78bfa;
-      padding: 10px 20px;
-      margin: 0 10px;
-      color: #dbeafe;
-      border-radius: 10px;
+    .nav-center {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .nav-center a {
+      color: #e0e0e0;
       text-decoration: none;
+      padding: 10px 15px;
       font-weight: bold;
+      border-radius: 8px;
       transition: all 0.3s ease;
-      box-shadow: 0 0 10px #a78bfa;
     }
 
-    nav a:hover {
-      background-color: #a78bfa;
-      color: #0f172a;
+    .nav-center a:hover {
+      color: #a78bfa;
+      background-color: rgba(167, 139, 250, 0.1);
     }
 
     .section {
@@ -60,7 +60,7 @@
 
     .script-box {
       text-align: left;
-      background: #1e293b;
+      background: #1e1e1e;
       padding: 20px;
       border-radius: 10px;
       margin: 20px 0;
@@ -79,23 +79,26 @@
     .btn-discord {
       display: inline-block;
       margin-top: 20px;
-      background-color: #5865F2;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
+      background-color: #a78bfa;
+      color: #0f172a;
+      padding: 12px 24px;
+      border-radius: 10px;
       font-weight: bold;
       text-decoration: none;
-      transition: background 0.3s;
+      font-size: 1.1rem;
+      box-shadow: 0 0 20px #a78bfa;
+      transition: background 0.3s, transform 0.3s;
     }
 
     .btn-discord:hover {
-      background-color: #4752C4;
+      background-color: #c4b5fd;
+      transform: scale(1.05);
     }
 
     footer {
       margin-top: 50px;
       padding: 20px;
-      background: #0e1a2b;
+      background: #1a1a1a;
       color: #64748b;
       font-size: 0.9em;
     }
@@ -114,16 +117,18 @@
 </head>
 <body>
 
-  <header>
+  <header class="section">
     <h1>Inaky Hub</h1>
     <p>Scripts, Tools, and Good Vibes Only</p>
   </header>
 
   <nav>
-    <a href="#scripts">Scripts</a>
-    <a href="#video">Video</a>
-    <a href="#contact">Contact</a>
-  <a href="https://discord.gg/EyseXZMm" target="_blank" class="btn-discord">Join Discord</a>
+    <div class="nav-center">
+      <a href="#scripts">Scripts</a>
+      <a href="#video">Video</a>
+      <a href="#discord">Discord</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
   <section class="section" id="scripts">
@@ -171,6 +176,13 @@
   <section class="section" id="video">
     <h2>🎥 KJ & Friends</h2>
     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/MCy7yx3fSTY" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <!-- Join Discord Section -->
+  <section id="discord" class="section">
+    <h2>💬 Join My Discord</h2>
+    <p>Come hang out, get updates, share scripts, or just vibe with the squad.</p>
+    <a href="https://discord.gg/EyseXZMm" target="_blank" class="btn-discord">Join the Discord</a>
   </section>
 
   <section class="section" id="contact">
