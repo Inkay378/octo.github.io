@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -22,8 +21,8 @@
       background: #1e1e2f;
       padding: 40px 20px;
       text-align: center;
-      color: #76ff03;
-      border-bottom: 4px solid #76ff03;
+      color: #d9a7ff;
+      border-bottom: 4px solid #d9a7ff;
     }
     header h1 {
       font-family: 'Orbitron', sans-serif;
@@ -39,17 +38,17 @@
       background: #1e1e2f;
       padding: 25px;
       margin-bottom: 30px;
-      border-left: 6px solid #76ff03;
+      border-left: 6px solid #d9a7ff;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     }
     h2 {
       font-family: 'Orbitron', sans-serif;
-      color: #76ff03;
+      color: #d9a7ff;
       margin-bottom: 15px;
     }
     a {
-      color: #76ff03;
+      color: #d9a7ff;
       text-decoration: none;
     }
     .scripts-container {
@@ -60,7 +59,7 @@
     .script-block {
       background-color: #2c2c2c;
       padding: 15px;
-      border-left: 4px solid #76ff03;
+      border-left: 4px solid #d9a7ff;
       border-radius: 5px;
       font-family: 'Courier New', Courier, monospace;
       color: #f1f1f1;
@@ -144,7 +143,7 @@
     </section>
   </main>
   <footer>
-    &copy; @2025 Inaky. All rights reserved.
+    &copy; #2025 Inaky. All rights reserved.
   </footer>
 </body>
 </html>
