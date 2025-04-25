@@ -124,6 +124,9 @@
       margin-top: 20px;
       box-shadow: 0 0 25px #a78bfa;
       border-radius: 12px;
+      width: 100%;
+      max-width: 600px;
+      height: 315px;
     }
 
     .btn-discord {
@@ -176,6 +179,7 @@
     <div class="nav-center">
       <a class="tab-link active" data-tab="scripts">Scripts</a>
       <a class="tab-link" data-tab="video">Video</a>
+      <a class="tab-link" data-tab="scriptblox">ScriptBlox</a>
       <a class="tab-link" data-tab="discord">Discord</a>
       <a class="tab-link" data-tab="contact">Contact</a>
     </div>
@@ -190,15 +194,19 @@
     <div class="script-box"><strong>Tamhub:</strong><br>loadstring(game:HttpGet("https://raw.githubusercontent.com/tamarixr/tamhub/main/bettertamhub.lua"))()</div>
     <div class="script-box"><strong>Infinite Yield:</strong><br>loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()</div>
     <div class="script-box"><strong>UNC Test:</strong><br>loadstring(game:HttpGet('https://github.com/ltseverydayyou/uuuuuuu/blob/main/UNC%20test?raw=true'))()</div>
-  </section>
+  </section>  
 
   <section class="section" id="video">
-    <h2>🎥watch if ur bored</h2>
-  <div class="video-grid">
-  <iframe class="video" src="https://www.youtube.com/embed/MCy7yx3fSTY" frameborder="0" allowfullscreen></iframe>
-  <iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-  <iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
-</div>
+    <h2>🎥 watch if bored</h2>
+    <iframe class="video" src="https://www.youtube.com/embed/LZkl0_9xFOU" frameborder="0" allowfullscreen></iframe>
+    <iframe class="video" src="https://www.youtube.com/embed/hr-pUCuYALw" frameborder="0" allowfullscreen></iframe>
+    <iframe class="video" src="https://www.youtube.com/embed/kMScaanmWHA" frameborder="0" allowfullscreen></iframe>
+    <iframe class="video" src="https://www.youtube.com/embed/YZdl-uMfE0Y" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="section" id="scriptblox">
+    <h2>📂 ScriptBlox</h2>
+    <iframe class="video" src="https://scriptblox.com" frameborder="0" style="width:100%; height:600px;"></iframe>
   </section>
 
   <section class="section" id="discord">
@@ -222,11 +230,9 @@
 
     tabLinks.forEach(link => {
       link.addEventListener("click", () => {
-        // Remove active from all
         tabLinks.forEach(l => l.classList.remove("active"));
         sections.forEach(s => s.classList.remove("active"));
 
-        // Add active to clicked
         link.classList.add("active");
         document.getElementById(link.getAttribute("data-tab")).classList.add("active");
       });
