@@ -204,14 +204,6 @@
     <iframe class="video" src="https://www.youtube.com/embed/YZdl-uMfE0Y" frameborder="0" allowfullscreen></iframe>
   </section>
 
-<section>  class="section" id="scriptblox">
-  <h2>📦 ScriptBlox</h2>
-  <p>Discover tons of scripts directly from the official site.</p>
-  <a href="https://scriptblox.com/" target="_blank" class="btn-discord">Visit ScriptBlox</a>
-</section>
-
-  </section>
-
   <section class="section" id="discord">
     <h2>💬 Join My Discord</h2>
     <p>Come hang out, get updates, share scripts, or just vibe with the squad.</p>
