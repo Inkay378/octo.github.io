@@ -159,6 +159,20 @@
       height: 315px;
     }
 
+    .tiktok-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .tiktok-embed {
+      max-width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 25px var(--box-shadow-color);
+    }
+
     .btn-primary {
       display: inline-block;
       margin-top: 20px;
@@ -239,6 +253,7 @@
     <div class="nav-center">
       <a class="tab-link active" data-tab="scripts">Scripts</a>
       <a class="tab-link" data-tab="video">Video</a>
+      <a class="tab-link" data-tab="doomscrolling">🔥 Doomscrolling</a>
       <a class="tab-link" data-tab="scriptblox">ScriptBlox</a>
       <a class="tab-link" data-tab="discord">Discord</a>
       <a class="tab-link" data-tab="contact">Contact</a>
@@ -266,6 +281,25 @@
     <iframe class="video" src="https://www.youtube.com/embed/hr-pUCuYALw" frameborder="0" allowfullscreen></iframe>
     <iframe class="video" src="https://www.youtube.com/embed/kMScaanmWHA" frameborder="0" allowfullscreen></iframe>
     <iframe class="video" src="https://www.youtube.com/embed/YZdl-uMfE0Y" frameborder="0" allowfullscreen></iframe>
+  </section>
+  
+  <section class="section" id="doomscrolling">
+    <h2>🔥 Doomscrolling</h2>
+    <p>Get lost in the endless TikTok FYP void.</p>
+    
+    <div style="text-align: center; margin: 30px 0;">
+      <iframe src="https://www.tiktok.com/embed/v2/" style="width: 100%; max-width: 325px; height: 600px; border-radius: 15px; border: none; box-shadow: 0 0 25px var(--box-shadow-color);" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+      <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">Open TikTok</a>
+      <a href="https://www.tiktok.com/foryou" target="_blank" rel="noopener noreferrer" class="btn-primary">Go to FYP</a>
+    </div>
+    
+    <div style="margin-top: 30px; background: var(--bg-tertiary); padding: 20px; border-radius: 10px; text-align: left;">
+      <h3 style="color: var(--accent-color);">What is FYP?</h3>
+      <p>The "For You Page" is TikTok's personalized feed that shows you videos based on your interests and interactions. It's an algorithmic black hole designed to keep you scrolling for hours.</p>
+    </div>
   </section>
 
   <section class="section" id="scriptblox">
