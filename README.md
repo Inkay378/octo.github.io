@@ -287,11 +287,27 @@
     <h2>🔥 Doomscrolling</h2>
     <p>Get lost in the endless TikTok FYP void.</p>
     
-    <div style="text-align: center; margin: 30px 0;">
-      <iframe src="https://www.tiktok.com/embed/v2/" style="width: 100%; max-width: 325px; height: 600px; border-radius: 15px; border: none; box-shadow: 0 0 25px var(--box-shadow-color);" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="features-grid" style="margin-top: 30px;">
+      <div class="feature-card">
+        <img src="/api/placeholder/280/280" alt="TikTok Feed" style="width: 100%; border-radius: 8px; margin-bottom: 15px;" />
+        <h3>Trending</h3>
+        <p>Never-ending content from viral challenges to dance crazes</p>
+      </div>
+      
+      <div class="feature-card">
+        <img src="/api/placeholder/280/280" alt="TikTok Creator" style="width: 100%; border-radius: 8px; margin-bottom: 15px;" />
+        <h3>FYP Algorithm</h3>
+        <p>Personalized content that knows you better than you know yourself</p>
+      </div>
+      
+      <div class="feature-card">
+        <img src="/api/placeholder/280/280" alt="TikTok Effects" style="width: 100%; border-radius: 8px; margin-bottom: 15px;" />
+        <h3>Endless Scrolling</h3>
+        <p>Where minutes turn into hours and productivity goes to die</p>
+      </div>
     </div>
     
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
       <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">Open TikTok</a>
       <a href="https://www.tiktok.com/foryou" target="_blank" rel="noopener noreferrer" class="btn-primary">Go to FYP</a>
     </div>
